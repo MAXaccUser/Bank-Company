@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=GFS+Didot&family=Jura:wght@300..700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Over+the+Rainbow&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lexend";
+    transition: 0.3s ease;
+    
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--black) !important;
+}
+:root{
+    --white:#fff;
+    --black:#000;
+    --green:#CAFF33;
+}
+.navbar{
+    border: 3px solid #262626;
+    width: auto;
+    height: auto;
+    border-radius: 35px;
+    margin: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+
+}
+.btn0 a{
+    color: var(--white) !important;
+}
+.navbar ul li a:hover{
+    background-color:#5c5c5c;
+    border-radius: 30px !important;
+    transition: 0.3s ease-in;
+}
+.navbar .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  .sm-icons {
+    flex-direction: row;
+  }
+  .sm-icons .nav-link {
+    padding-right: 1em;
+  }
+  .b-2{
+    color: var(--white);
+    padding: 0 10px;
+  }
+  .b-2 button a:nth-child(1){
+    color: var(--black);
+    padding: 0 10px;
+    text-decoration: none;
+  }
+  .btn2{
+    background-color: var(--green) !important;
+    color: var(--black);
+    border-radius: 20px !important;
+  }
+  .home{
+    font-weight: 500 !important;
+    color: var(--white) ;
+    background: radial-gradient(103.26% 114.79% at 103.26% 0%, rgba(25, 25, 25, 0.3) 20.29%, rgba(202, 255, 51, 0.3) 34.91%, rgba(25, 25, 25, 0.3) 60.69%) ;
+    border-radius: 30px;   
+  }
+  .home-img{
+    padding: 30px  30px!important;
+  }
+
+.buttons button{
+    background-color: transparent !important;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid #262626;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 1;
+}
+.cards-group{
+    margin: 30px 0 !important;
+    display: flex;
+}
+.end i{
+    margin: 0 10px;
+    color: var(--green);
+
+}
+.end{
+    border-top: 2px solid #1C1C1C;
+    border-bottom: 2px solid #1C1C1C;
+    height: 10vh;
+    text-align: center;
+}
+.icons i{
+    background-color: var(--green);
+    padding: 20px; 
+    border-radius: 30px;
+    color: var(--black);
+}
+.icons i:hover{
+    background-color: #5c5c5c;
+    box-shadow: 0 0 12px var(--white);
+    color: var(--green);
+}
+.end span{
+    margin: 0 10px;
+}
+  /* ====  Media Screen ====== */
+    
+  @media screen and (max-width: 1613px) {
+    .home p{
+        font-size: 1.1vw !important;
+    }
+}
+  @media screen and (max-width: 768px) {
+    .navbar-toggler{
+        background-color: #333 !important;
+        border-radius: 20px !important;
+    }
+    .row-1{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+    .row-2{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .home-title{
+        position: relative;
+        bottom:50px;
+        width: auto;
+        height: auto !important;
+    }
+    .about{
+        margin-top: 1px !important;
+    }
+    .home p{
+        font-size:0.7rem !important;
+        flex-wrap: wrap !important;
+    }
+  }
+  @media screen and (max-width: 993px) {
+    .row-1{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+    .gr-2 img{
+        border-bottom: 2px solid var(--green);
+        border-left: none !important;
+    }
+    .gr-1 img{
+        border-bottom: 2px solid var(--green);
+        border-right: none !important;
+    }
+    .row-2{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .home .home-title-p p{
+        font-size: 3rem !important;
+    }
+    .home-title{
+        position: relative;
+        bottom:50px;
+    }
+    .about{
+        position: relative;
+        top: 1px;
+    }
+    .end{
+        display: none;
+    }
+    .service{
+        display: none;
+    }
+    .banking{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 850px) {
+    .cards-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .margin{
+        margin: 10px auto !important;
+        width: 90% !important;
+    }
+}
+@media screen and (max-width:450px) {
+    .card-title{
+        font-size: large;
+    }
+    .buttons{
+        font-size: small !important;
+    }
+    
+}
+@media screen and (max-width: 761px) {
+    .end-2{
+        display: block;
+        display: grid;
+    }
+    
+}
+@media screen and (max-width: 581px) {
+    .end-2{
+        margin: 10px !important;
+        text-align: center;
+    }
+    .icons{
+        margin: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .list-ul{
+        display: grid;
+    }
+    .about{
+        text-align: center;
+    }
+    
+}
