@@ -55,32 +55,30 @@ body {
 .nav-itm a:hover {
     color: var(--bg-color);
 }
-.nav-btn:first-child {
-    background-color: transparent;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 20px;
+.nav-btns {
+    display: flex;
+    align-items: center;
 }
-.nav-btn:first-child a:hover {
-    color: var(--bg-color);
-}
-.nav-btn:first-child:hover {
+.nav-btn {
     background-color: var(--grey-color);
-}
-.nav-btn:last-child {
-    background-color: var(--bg-color);
-    border-radius: 20px;
+    border: 1px solid var(--grey-color);
     padding: 5px 15px;
+    border-radius: 20px;
+}
+.nav-btn:hover {
+    color: var(--bg-color);
     border: 1px solid var(--bg-color);
 }
-.nav-btn:last-child:hover {
+.nav-btn2 {
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: var(--grey-color);
+}
+.nav-btn2:hover {
+    color: #CAFF33;
     background-color: transparent;
-}
-.nav-btn:last-child a:hover {
-    color: var(--bg-color);
-}
-.nav-btn:last-child a {
-    color: #000;
 }
 .nav-btns2 {
     display: none;
@@ -102,7 +100,7 @@ body {
         flex-direction: column;
         background-color: #262626a6;
         width: 500px;
-        top: -19px; left: -100px;
+        top: 0px; left: -100px;
         height: 100vh;
         backdrop-filter: blur(30px);
         transition: 0.6s;
@@ -118,8 +116,9 @@ body {
         display: none;
     }
     .nav-btns2 {
-        display: block;
+        display: flex;
         text-align: center;
+        align-items: center;
     }
     .nav-btns2 button {
         margin: 10px auto;
@@ -140,7 +139,7 @@ body {
 @media screen and (max-width: 500px) {
     .nav-list {
         width: 100%;
-        left: -3px; top: 0;
+        left: -50px; top: 0;
     }
 }
 /* Navbar css end */
