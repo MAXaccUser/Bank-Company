@@ -134,6 +134,11 @@ body{
 .nav-log-2{
     display: none;
 }
+.nav-links{
+    background: #262626;
+    padding: 3px;
+    border-radius: 20px;
+}
 @media screen and (max-width: 768px) {
     .navbar{
         display: flex;
@@ -351,7 +356,7 @@ body{
 }
 
 swiper-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -427,7 +432,7 @@ swiper-slide {
     align-items: center;
     background: #1A1A1A;
     border: 1px solid #262626;
-    padding: 15px 18px;
+    padding: 10px 18px;
     border-radius: 80px;    
     margin-top: 80px;
 }
